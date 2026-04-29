@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Backender": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Developmentdotnet dev-certs https --trust"
+      },
+      "applicationUrl": "https://localhost:7000;http://localhost:7001"
+    }
+  }
+}

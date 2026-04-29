@@ -1,0 +1,108 @@
+[
+  {
+    "ContainingType": "Backender.Controller.MessageController",
+    "Method": "CreateAccountToSendMessage",
+    "RelativePath": "api/Message/create-profile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ACD",
+        "Type": "Backender.DTOs.CreateAccountDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backender.Controller.MessageController",
+    "Method": "message_deleter",
+    "RelativePath": "api/Message/delete-message/{id_message}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_message",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backender.Controller.MessageController",
+    "Method": "message_getter_all_by_id",
+    "RelativePath": "api/Message/get-all-message-by-id/{id_wanted}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id_wanted",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backender.Controller.MessageController",
+    "Method": "message_getter_by_namemsg",
+    "RelativePath": "api/Message/get-message-by-namemsg/{msg}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "msg",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backender.Controller.MessageController",
+    "Method": "message_getter",
+    "RelativePath": "api/Message/get-messages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MyId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MessageId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backender.Controller.MessageController",
+    "Method": "message_sender",
+    "RelativePath": "api/Message/send-message",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "msg",
+        "Type": "Backender.DTOs.MessageDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
